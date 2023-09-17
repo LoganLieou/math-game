@@ -14,6 +14,8 @@
 		10F800852AB656EA00EFF4C9 /* math_gameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F800842AB656EA00EFF4C9 /* math_gameTests.swift */; };
 		10F8008F2AB656EA00EFF4C9 /* math_gameUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F8008E2AB656EA00EFF4C9 /* math_gameUITests.swift */; };
 		10F800912AB656EA00EFF4C9 /* math_gameUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F800902AB656EA00EFF4C9 /* math_gameUITestsLaunchTests.swift */; };
+		10F800A02AB6A59D00EFF4C9 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F8009F2AB6A59D00EFF4C9 /* GameView.swift */; };
+		10F800A22AB6AD6A00EFF4C9 /* ScoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F800A12AB6AD6A00EFF4C9 /* ScoreView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,8 @@
 		10F8008A2AB656EA00EFF4C9 /* math-gameUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "math-gameUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		10F8008E2AB656EA00EFF4C9 /* math_gameUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = math_gameUITests.swift; sourceTree = "<group>"; };
 		10F800902AB656EA00EFF4C9 /* math_gameUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = math_gameUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		10F8009F2AB6A59D00EFF4C9 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
+		10F800A12AB6AD6A00EFF4C9 /* ScoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +100,8 @@
 			children = (
 				10F800732AB656E900EFF4C9 /* math_gameApp.swift */,
 				10F800752AB656E900EFF4C9 /* ContentView.swift */,
+				10F8009F2AB6A59D00EFF4C9 /* GameView.swift */,
+				10F800A12AB6AD6A00EFF4C9 /* ScoreView.swift */,
 				10F800772AB656EA00EFF4C9 /* Assets.xcassets */,
 				10F800792AB656EA00EFF4C9 /* Preview Content */,
 			);
@@ -258,6 +264,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				10F800762AB656E900EFF4C9 /* ContentView.swift in Sources */,
+				10F800A22AB6AD6A00EFF4C9 /* ScoreView.swift in Sources */,
+				10F800A02AB6A59D00EFF4C9 /* GameView.swift in Sources */,
 				10F800742AB656E900EFF4C9 /* math_gameApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -414,17 +422,21 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"math-game/Preview Content\"";
 				DEVELOPMENT_TEAM = M55Z7B4LB3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Zetamac;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.games";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -432,6 +444,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "xyz.jeboira.math-game";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -443,17 +456,21 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"math-game/Preview Content\"";
 				DEVELOPMENT_TEAM = M55Z7B4LB3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Zetamac;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.games";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -461,6 +478,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "xyz.jeboira.math-game";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
