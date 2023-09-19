@@ -7,11 +7,9 @@
 
 import SwiftUI
 
-// Result variable.
 var res = ""
 
 func generateProblem() -> String {
-    // Randomly select an arithmetic operation.
     let opn = Int.random(in: 1...4)
     var op = "", fst = 0, snd = 0
     switch opn {
@@ -51,25 +49,19 @@ func generateProblem() -> String {
 }
 
 struct GameView: View {
+    // Constructor
+    let t: Double
+    @State private var problemString = generateProblem()
     @State private var isActive: Bool = false
     @State private var num = ""
-    @State private var problemString = generateProblem()
     @State var score = 0
+    
     var body: some View {
         if (isActive) {
             ScoreView(score: score)
         }
         else {
             VStack {
-                /* Depreceated need to fix this.
-                 NavigationLink("", destination: ScoreView(score: score), isActive: $isActive)
-                 .hidden()
-                 .onAppear {
-                 Timer.scheduledTimer(withTimeInterval: 1, repeats: false) { timer in
-                 isActive = true
-                 }
-                 }
-                 */
                 Text(problemString)
                     .font(.title)
                 TextField("Enter here...", text: $num)
@@ -86,7 +78,7 @@ struct GameView: View {
             }
             .padding()
             .onAppear {
-                Timer.scheduledTimer(withTimeInterval: 30, repeats: false) { timer in
+                Timer.scheduledTimer(withTimeInterval: t, repeats: false) { timer in
                     isActive = true
                 }
             }
@@ -96,6 +88,6 @@ struct GameView: View {
 
 struct GameView_Previews: PreviewProvider {
     static var previews: some View {
-        GameView()
+        GameView(t: 1.0)
     }
 }

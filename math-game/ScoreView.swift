@@ -12,7 +12,7 @@ struct ScoreView: View {
     @State private var isActive = false
     var body: some View {
         if (isActive) {
-            GameView()
+            ContentView()
         }
         else {
             VStack {
